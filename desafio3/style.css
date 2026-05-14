@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f2f5;
+  padding: 24px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.linha {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+label {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #ebebeb;
+  color: #333;
+}
+
+input::placeholder {
+  color: #999;
+}
+
+.hide-mobile {
+  display: none;
+}
+
+@media (min-width: 768px) {
+
+  .linha {
+    flex-direction: row;
+  }
+
+  .hide-mobile {
+    display: flex;
+  }
+
+}
